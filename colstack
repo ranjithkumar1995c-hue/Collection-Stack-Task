@@ -104,3 +104,31 @@ Trauckgame:Trauckgame final 3
 Removed:Trauckgame final 3
 [Trauckgame starting 1, Trauckgame centre 2]
 After removing:[Trauckgame starting 1, Trauckgame centre 2]
+package StackCollectionPractiseTask;
+
+import java.util.Stack;
+
+//Task NO;5.
+//In function calls, manage execution order using stack memory (last function call executes first).
+public class Functioncall5 {
+public static void main(String[] args) {
+	Stack<String>b=new Stack<>();
+	b.push("Function call ");
+	b.push("Function mainmethod ");
+	b.push("Function returntypemethod");
+	System.out.println(b);
+	System.out.println("Functionmainmethod:"+b.peek());
+	System.out.println("Removed:"+b.pop());
+	System.out.println(b);
+	System.out.println("After removing:"+b);
+
+		
+
+	}
+
+}
+(OUTPUT)=>[Function call , Function mainmethod , Function returntypemethod]
+Functionmainmethod:Function returntypemethod
+Removed:Function returntypemethod
+[Function call , Function mainmethod ]
+After removing:[Function call , Function mainmethod ].
