@@ -50,5 +50,31 @@ Balancesheet:Balancesheet 3
 Removed:Balancesheet 3
 [Balancesheet 1, Balancesheet 2]
 After removing:[Balancesheet 1, Balancesheet 2]
+package StackCollectionPractiseTask;
+
+import java.util.Stack;
+
+//Task NO:3
+//In a browser, implement back button functionality to go to previously visited pages.
+public class BrowserHistorytask3 {
+public static void main(String[] args) {
+	Stack<String>b=new Stack<>();
+	b.push("Chromepage 1");
+	b.push("Chromepage 2");
+	b.push("Chromepage 3");
+	System.out.println(b);
+	System.out.println("Chromepage:"+b.peek());
+	System.out.println("Removed:"+b.pop());
+	System.out.println(b);
+	System.out.println("After removing:"+b);
+
+	}
+
+}
+(OUTPUT)=>[Chromepage 1, Chromepage 2, Chromepage 3]
+Chromepage:Chromepage 3
+Removed:Chromepage 3
+[Chromepage 1, Chromepage 2]
+After removing:[Chromepage 1, Chromepage 2].
 
 
