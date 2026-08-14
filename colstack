@@ -1,1 +1,28 @@
+package StackCollectionPractiseTask;
+//Task No:1.
+//In a text editor, store user actions and perform undo operations by removing the last action first.
+import java.util.Stack;
+
+public class TextTask1 {
+
+	public static void main(String[] args) {
+		Stack<String>t=new Stack<>();
+		t.push("Text 1");
+		t.push("Text 2");
+		t.push("Text 3");
+		System.out.println(t);
+		System.out.println("Top Text:"+t.peek());
+		System.out.println("Removed:"+t.pop());
+		System.out.println(t);
+		System.out.println("After removing:"+t);
+
+	}
+
+}
+(OUTPUT)=>[Text 1, Text 2, Text 3]
+Top Text:Text 3
+Removed:Text 3
+[Text 1, Text 2]
+After removing:[Text 1, Text 2].
+
 
