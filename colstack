@@ -24,5 +24,31 @@ Top Text:Text 3
 Removed:Text 3
 [Text 1, Text 2]
 After removing:[Text 1, Text 2].
+package StackCollectionPractiseTask;
+//Task No:2.
+//In expression validation, check if parentheses are balanced using stack operations.
+
+import java.util.Stack;
+
+public class StackOpertion2 {
+public static void main(String[] args) {
+	Stack<String>b=new Stack<>();
+	b.push("Balancesheet 1");
+	b.push("Balancesheet 2");
+	b.push("Balancesheet 3");
+	System.out.println(b);
+	System.out.println("Balancesheet:"+b.peek());
+	System.out.println("Removed:"+b.pop());
+	System.out.println(b);
+	System.out.println("After removing:"+b);
+	
+
+}
+}
+(OUTPUT)=>[Balancesheet 1, Balancesheet 2, Balancesheet 3]
+Balancesheet:Balancesheet 3
+Removed:Balancesheet 3
+[Balancesheet 1, Balancesheet 2]
+After removing:[Balancesheet 1, Balancesheet 2]
 
 
