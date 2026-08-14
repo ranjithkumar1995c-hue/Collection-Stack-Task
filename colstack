@@ -78,3 +78,29 @@ Removed:Chromepage 3
 After removing:[Chromepage 1, Chromepage 2].
 
 
+package StackCollectionPractiseTask;
+//Task No:4.
+//In a game, track player moves and allow undoing the last move.
+import java.util.Stack;
+
+public class Gametrack4 {
+
+	public static void main(String[] args) {
+		Stack<String>b=new Stack<>();
+		b.push("Trauckgame starting 1");
+		b.push("Trauckgame centre 2");
+		b.push("Trauckgame final 3");
+		System.out.println(b);
+		System.out.println("Trauckgame:"+b.peek());
+		System.out.println("Removed:"+b.pop());
+		System.out.println(b);
+		System.out.println("After removing:"+b);
+
+	
+
+}}
+(OUTPUT)=>[Trauckgame starting 1, Trauckgame centre 2, Trauckgame final 3]
+Trauckgame:Trauckgame final 3
+Removed:Trauckgame final 3
+[Trauckgame starting 1, Trauckgame centre 2]
+After removing:[Trauckgame starting 1, Trauckgame centre 2]
